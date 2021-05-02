@@ -1,0 +1,257 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    color: #4e525d;
+    cursor: default;
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+:focus, :active {
+    outline: none;
+}
+
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    adding: 0 15px;
+}
+
+.header {
+    z-index: 9999;
+    position: sticky;
+    top:0;
+    background-color: #fff;
+    box-shadow:  0 0 10px rgba(0,0,0, 0.2);
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    height: 100px;
+    align-items: center;
+}
+
+.header_logo {
+    font-size: 43px;
+    line-height: 24px;
+    padding: 15px;
+    color: #49cbcd;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.header_nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    list-style: none;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 400;
+    font-family: "Open Sans";
+}
+
+.nav_link {
+    color: #60646c;
+    padding: 37px 20px;
+    text-decoration: none;
+}
+
+.nav_link:hover {
+    background-color: #f8f9fb;
+    color: #49cbcd;
+    border-bottom: 3px solid #49cbcd;
+}
+
+.active .nav_link {
+    background-color: #f8f9fb;
+    color: #49cbcd;
+    border-bottom: 3px solid #49cbcd;
+}
+
+/* products */
+.products_list {
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* product item */
+.product_item {
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 3px solid #F5F5F5;
+    background: white;
+    transition: .3s ease-in;
+    box-shadow:  0 0 10px rgba(0,0,0, 0.2);
+}
+
+.product_item:hover {
+    border-bottom: 3px solid #49cbcd;
+}
+
+.product_item img {
+    display: block;
+    width: 300px;
+    height: 440px;
+}
+
+.product_list {
+    background: #fafafa;
+    padding: 15px 0;
+}
+
+.product_list h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #444444;
+    margin: 0 0 10px 0;
+}
+
+.price {
+    font-size: 16px;
+    color: #fc5a5a;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.add_button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 12px;
+    background: #cccccc;
+    color: white;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 28px;
+    transition: .3s ease-in;
+}
+.product_item:hover .add_button {
+    background: #49cbcd;
+}
+
+/* cart */
+.cart {
+    margin: 50px;
+}
+
+.cart_title {
+    text-align: center;
+}
+
+.cart_table {
+    width: 80%;
+    margin: 40px auto;
+    border: none;
+    border-collapse: collapse;
+}
+
+.cart_table thead th {
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    padding: 10px 15px;
+    background: #d8d8d8;
+    font-size: 14px;
+}
+
+.cart_table thead tr th:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.cart_table thead tr th:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+.cart_table tbody td {
+    text-align: left;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+.cart_table tbody tr:nth-child(even){
+    background: #f3f3f3;
+}
+
+.cart_table tbody tr td:first-child {
+    border-radius: 8px 0 0 8px;
+}
+
+.cart_table tbody tr td:last-child {
+    border-radius: 0 8px 8px 0;
+}
+
+.total_price {
+    font-weight: 800;
+}
+/* cart buttons */
+.cart_buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.cart button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0 20px;
+    border-radius: 8px;
+    background: #cccccc;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 28px;
+    transition: .3s ease-in;
+    margin: 0 10px;
+}
+
+.cart button:hover {
+    background: #49cbcd;
+}
